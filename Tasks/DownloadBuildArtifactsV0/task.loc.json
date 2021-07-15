@@ -1,6 +1,6 @@
 {
-  "id": "a433f589-fce1-4460-9ee6-44a624aeb1fb",
-  "name": "DownloadBuildArtifacts",
+  "id": "1369cabc-aeb7-41b5-89ff-a49f7ac6922f",
+  "name": "DownloadBuildArtifactsPlugin",
   "friendlyName": "ms-resource:loc.friendlyName",
   "description": "ms-resource:loc.description",
   "helpUrl": "https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-build-artifacts",
@@ -10,7 +10,7 @@
   "version": {
     "Major": 0,
     "Minor": 190,
-    "Patch": 0
+    "Patch": 2
   },
   "groups": [
     {
@@ -263,9 +263,8 @@
   ],
   "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
   "execution": {
-    "Node10": {
-      "target": "main.js",
-      "argumentFormat": ""
+    "AgentPlugin": {
+      "target": "Agent.Plugins.BuildArtifacts.DownloadBuildArtifactTaskV1_0_0, Agent.Plugins"
     }
   },
   "messages": {

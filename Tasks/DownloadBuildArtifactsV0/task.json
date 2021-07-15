@@ -1,7 +1,7 @@
 {
-    "id": "a433f589-fce1-4460-9ee6-44a624aeb1fb",
-    "name": "DownloadBuildArtifacts",
-    "friendlyName": "Download build artifacts",
+    "id": "1369cabc-aeb7-41b5-89ff-a49f7ac6922f",
+    "name": "DownloadBuildArtifactsPlugin",
+    "friendlyName": "Download build artifacts (Plugin)",
     "description": "Download files that were saved as artifacts of a completed build",
     "helpUrl": "https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-build-artifacts",
     "helpMarkDown": "",
@@ -10,7 +10,7 @@
     "version": {
         "Major": 0,
         "Minor": 190,
-        "Patch": 0
+        "Patch": 2
     },
     "groups": [
         {
@@ -263,9 +263,8 @@
     ],
     "instanceNameFormat": "Download Build Artifacts",
     "execution": {
-        "Node10": {
-            "target": "main.js",
-            "argumentFormat": ""
+        "AgentPlugin": {
+            "target": "Agent.Plugins.BuildArtifacts.DownloadBuildArtifactTaskV1_0_0, Agent.Plugins"
         }
     },
     "messages": {
